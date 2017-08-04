@@ -31,7 +31,8 @@
         }
         .movie-tile {
             margin-bottom: 20px;
-            padding-top: 20px;
+            padding: 20px;
+            flex-basis: 33%;
         }
         .movie-tile:hover {
             background-color: #EEE;
@@ -50,6 +51,28 @@
             top: 0;
             background-color: white;
         }
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .poster {
+            -webkit-box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.49);
+            -moz-box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.49);
+            box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.49);
+        }
+        @media screen and (max-width: 1199px) {
+            .movie-tile {
+                flex-basis: 50%;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .movie-tile {
+                flex-basis: 80%;
+                
+            }
+        }
+        
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -97,41 +120,47 @@
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">Michelle's Favorite Movies</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="movie-container container">
       
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="0Hh-OEWkC9o" data-toggle="modal" data-target="#trailer">
-    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BY2M5Mzg3NjctZTlkNy00MTU0LWFlYTQtY2E2Y2M4NjNiNzllXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_.jpg" width="220" height="342">
-    <h2>Harold and Maude</h2>
+<div class="movie-tile text-center" data-trailer-youtube-id="0Hh-OEWkC9o" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BY2M5Mzg3NjctZTlkNy00MTU0LWFlYTQtY2E2Y2M4NjNiNzllXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_.jpg" width="220" height="342" class="poster">
+    <h2>Harold and Maude (1971)</h2>
+    <p>Young, rich, and obsessed with death, Harold finds himself changed forever when he meets lively septuagenarian Maude at a funeral.</p>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="nEl0NsYn1fU" data-toggle="modal" data-target="#trailer">
-    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjEzYjJmNzgtNDkwNy00MTQ4LTlmMWMtNzA4YjE2NjI0ZDg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,673,1000_AL_.jpg" width="220" height="342">
-    <h2>Apollo 13</h2>
+<div class="movie-tile text-center" data-trailer-youtube-id="LG1PlkURjxE" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNmNmZjViNTQtNDQ5Mi00MDYzLWI5YWMtNDUyZGNmMGZhNDg4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" width="220" height="342" class="poster">
+    <h2>Monty Python and the Holy Grail (1975)</h2>
+    <p>King Arthur and his knights embark on a low-budget search for the Grail, encountering many, very silly obstacles.</p>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="G4K_9WyQCgA" data-toggle="modal" data-target="#trailer">
-    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjlhZWMyNjItNWU5OS00NGQzLWI4YWYtYThjYjk3OTlmZDA5XkEyXkFqcGdeQXVyMzMyODMwMTI@._V1_SY1000_SX656_AL_.jpg" width="220" height="342">
-    <h2>Tommy</h2>
+<div class="movie-tile text-center" data-trailer-youtube-id="G4K_9WyQCgA" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjlhZWMyNjItNWU5OS00NGQzLWI4YWYtYThjYjk3OTlmZDA5XkEyXkFqcGdeQXVyMzMyODMwMTI@._V1_SY1000_SX656_AL_.jpg" width="220" height="342" class="poster">
+    <h2>Tommy (1975)</h2>
+    <p>A psychosomatically deaf, dumb and blind boy becomes a master pinball player and, subsequently, the object of a religious cult.</p>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="PfjZoM_wrV0" data-toggle="modal" data-target="#trailer">
-    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BN2Y4ZDBjMjEtZWQ0OS00NzYyLTg0M2ItMmUzYTEwN2RmMGVlXkEyXkFqcGdeQXVyMjgyOTI1ODY@._V1_SY1000_CR0,0,650,1000_AL_.jpg" width="220" height="342">
-    <h2>Flash Gordon</h2>
+<div class="movie-tile text-center" data-trailer-youtube-id="PfjZoM_wrV0" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BN2Y4ZDBjMjEtZWQ0OS00NzYyLTg0M2ItMmUzYTEwN2RmMGVlXkEyXkFqcGdeQXVyMjgyOTI1ODY@._V1_SY1000_CR0,0,650,1000_AL_.jpg" width="220" height="342" class="poster">
+    <h2>Flash Gordon (1980)</h2>
+    <p>A football player and his friends travel to the planet Mongo and find themselves fighting the tyranny of Ming the Merciless to save Earth.</p>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="LG1PlkURjxE" data-toggle="modal" data-target="#trailer">
-    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNmNmZjViNTQtNDQ5Mi00MDYzLWI5YWMtNDUyZGNmMGZhNDg4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" width="220" height="342">
-    <h2>Monty Python and the Holy Grail</h2>
+<div class="movie-tile text-center" data-trailer-youtube-id="PEQEgpyrQ3Q" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BZDhlZTYxOTYtYTk3Ny00ZDljLTk3ZmItZTcxZWU5YTIyYmFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,643,1000_AL_.jpg" width="220" height="342" class="poster">
+    <h2>The Wall (1982)</h2>
+    <p>A confined but troubled rock star descends into madness in the midst of his physical and social isolation from everyone.</p>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="PEQEgpyrQ3Q" data-toggle="modal" data-target="#trailer">
-    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BZDhlZTYxOTYtYTk3Ny00ZDljLTk3ZmItZTcxZWU5YTIyYmFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,643,1000_AL_.jpg" width="220" height="342">
-    <h2>The Wall</h2>
+<div class="movie-tile text-center" data-trailer-youtube-id="nEl0NsYn1fU" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjEzYjJmNzgtNDkwNy00MTQ4LTlmMWMtNzA4YjE2NjI0ZDg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,673,1000_AL_.jpg" width="220" height="342" class="poster">
+    <h2>Apollo 13 (1995)</h2>
+    <p>NASA must devise a strategy to return Apollo 13 to Earth safely after the spacecraft undergoes massive internal damage putting the lives of the three astronauts on board in jeopardy.</p>
 </div>
 
     </div>
