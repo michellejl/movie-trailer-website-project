@@ -49,18 +49,18 @@ holy_grail = media.Movie("Monty Python and the Holy Grail",
                          "https://www.youtube.com/watch?v=LG1PlkURjxE"
                          )
 
-the_wall = media.Movie("The Wall",
-                       "A confined but troubled rock star descends into "
-                       "madness in the midst of his physical and social "
-                       "isolation from everyone.",
+the_right_stuff = media.Movie("The Right Stuff",
+                       "The story of the original Mercury 7 astronauts and "
+                       "their macho, seat-of-the-pants approach to the space "
+                       "program.",
                        "1982",
-                       "https://images-na.ssl-images-amazon.com/images/M/MV5BZDhlZTYxOTYtYTk3Ny00ZDljLTk3ZmItZTcxZWU5YTIyYmFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,643,1000_AL_.jpg",  # NOQA
-                       "https://www.youtube.com/watch?v=PEQEgpyrQ3Q"
+                       "https://images-na.ssl-images-amazon.com/images/M/MV5BOTUwMDA3MTYtZjhjMi00ODFmLTg5ZTAtYzgwN2NlODgzMmUwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_SX670_AL_.jpg",  # NOQA
+                       "https://www.youtube.com/watch?v=ElzIPn1pXWE"
                        )
 
 # Create an array of all the movie objects created above to pass
 # to fresh_tomatoes
 movies = [harold_and_maude, holy_grail, tommy,
-          flash_gordon, the_wall, apollo_13]
+          flash_gordon, the_right_stuff, apollo_13]
 
 fresh_tomatoes.open_movies_page(movies)

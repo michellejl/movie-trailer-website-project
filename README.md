@@ -1,13 +1,6 @@
 # Movie Trailer Website Project
 This is a project for Udacity's [Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004)
 
-
-## Note to mentor:
-I think I have the project mostly complete. I would be interested in talking about
-the second item in the rubric under "Suggestions to Make Your Project Stand Out!" 
-which was to Use an API to supply movie data. I would love to try this, but I'm 
-not sure where to get started.
-
 ## Project Description:
 This is a project that produces an HTML website from python to create a website 
 that displays several movies. (Some of my all time favorites!)
